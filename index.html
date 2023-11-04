@@ -1,0 +1,392 @@
+<html>
+    <head>
+        <title>Pirnazar Tuvakov - Portfolio</title>
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<link class="tit-log" rel="shortcut icon" href="logo.ico" type="image/x-icon">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+    </head>
+    <body>
+        <div class="start">
+            <p>Hi,<br>
+            my name is <span class="or-text">Pirnazar Tuvakov</span>,<br>
+            I'm <span class="or-text">frontend</span> developer<br>
+            with over <span class="or-text">1 year</span> experience.
+            </p>
+            <h0 class="me">Let me show You...</h0>
+        </div>
+    <a href=""><img class="logo" src="logo.png" width="150px" height="100px"></a> 
+        <img class="im" src="Tuwakow.png" width="300px" height="300px">
+        <h2 class="by">Designed by Tuvakov</h2> 
+        <div class="akeconsa-udaneles">
+  <a href="#" title="Поднять страницу на вверх"><span class="fa fa-angle-double-up"></span></a>
+</div>
+        <h2 class="about-me">About me</h2>
+        <strong>I have been working in IT for 1 year,and have been involved in front-end development of commercial projects for more than 6 months.
+            During all this time, I managed to work independently as a freelancer and worked for several small and large companies.
+            I have extensive experience working with clients, managing a project from start to finish, extensive experience in teamwork and managing a team of developers.
+        </strong>
+        <div class="skills">
+            <h3>💪
+                <span class="skill">My Skills:</span>
+            </h3>
+            <ul>
+                <li><h4>The ability to search for the right information. Search mostly in English, know where to look depending on the question/problem;</h4></li>
+                <li><h4>Good technical English;</h4></li>
+                <li><h4>Advanced HTML (HTML5 API, good understanding of semantic tags), CSS (flexbox, grid, advanced css animations), JavaScript (JQ, ES6);</h4></li>
+                <li><h4>Excellent knowledge of JavaScript;</h4></li>
+            </ul>
+        </div>
+            <div class="additonal">
+                <h3>
+            <span class="add">+ Additional</span>
+        </h3>
+            <ul>
+                <li><h4>A lot of experience with Photoshop;</h4></li>
+                <li><h4>Extensive experience using HTML (PUG) and CSS preprocessors (SASS, SASS);</h4></li>
+                <li><h4>If necessary I build standard websites using my starting template;</h4></li>
+            </ul>
+        </div>
+        <div class="withme">
+            <h3>
+                <span class="with">Why should you work with me? 😎</span>
+            </h3>
+            <ul>
+                <li><h4>Fast and professional work;</h4></li>
+                <li><h4>Timely implementation of my tasks;</h4></li>
+                <li><h4>Do not go beyond the time frame of the task;</h4></li>
+                <li><h4>My principle is "Quality always comes first", if the project manager doesn't think so, it will be hard for us to work together;</h4></li>
+                <li><h4>I like new challenges and challanges :)</h4></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h2 class="contacts">Contacts</h2>
+            <span class="find">Find me on:</span>
+            <a href="https://join.skype.com/invite/KFKqm1rM01jC"><i class='fab fa-skype'style="font-size: 36px;"></i></a>
+            <a href="#css-modal-target"><i class='fab fa-telegram-plane' style="font-size:36px"></i></a> 
+            <!-- Модальное окно -->    
+            <div class="css-modal-target" id="css-modal-target">
+                <div class="cmt">
+                    <img src="Telegram.jpg" >
+                </div>
+                <a href="#close" class="css-modal-close"></a>    
+            </div>
+            <a href="https://youtube.com/channel/UCmHwcD4cTD3gFx6ZWVEb4DQ"><i class='fab fa-youtube' style="font-size: 36px;"></i></a>
+            <a href="https://github.com/Tuwakov/"><i class='fab fa-github' style="font-size: 36px;"></i></a>
+        </div>
+    </body>
+    <style>
+            /* Контейнер для кнопки */
+.css-modal-target-container {
+    height: 60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+/* Контейнер, который затемняет страницу */
+.css-modal-target {
+    display: none;
+}
+.css-modal-target:target {
+    display:flex;
+    align-items:center;
+    justify-content:center;    
+    z-index: 4;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    animation: bg 0.5s ease;
+    background: rgba(57, 57, 57, 0.7);
+}
+ 
+/* Модальное окно */
+.css-modal-target .cmt {
+    font-family: Verdana, sans-serif;  
+    font-size: 16px;
+    padding: 20px;
+    width: 80%;
+    z-index: 8;
+    max-width: 400px;
+    max-height: 70%;
+    transition: 0.5s;
+    border: 6px solid #BFE2FF;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+    text-align: center;
+    overflow: auto;
+    animation: scale 0.5s ease;
+}
+ 
+/* Кнопка с крестиком закрывающая окно */
+.css-modal-close {
+    position: relative;
+    display: block;
+}
+.css-modal-close:after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 6px solid #BFE2FF;
+    border-radius: 12px;
+    position: fixed;
+    z-index: 10;
+    top: 20px;
+    right: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23337AB7' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3e%3cline x1='18' y1='6' x2='6' y2='18'%3e%3c/line%3e%3cline x1='6' y1='6' x2='18' y2='18'%3e%3c/line%3e%3c/svg%3e");
+    background-color: #FFF;
+    background-size: cover;
+    animation: move 0.5s ease;
+}
+.css-modal-close:before {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    content: "";
+    cursor: default;
+}
+ 
+/* Анимации */
+@keyframes scale {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes move {
+    0% {
+        right: -80px;
+    }
+    100% {
+        right: 20px;
+    }
+}
+@keyframes bg {
+    0% {
+        background: rgba(51, 122, 183, 0);
+    }
+    100% {
+        background: rgba(57, 57, 57, 0.7);
+    }
+}
+        .fa-skype{
+            color: #fff;
+            transition: 0.4s;
+            position: absolute;
+            top: 358%;
+            left: 45%;
+        }
+        .fa-skype:hover{
+            color: hsl(196, 96%, 36%);
+            margin-top: -6px;
+        }
+        .fa-telegram-plane{
+            color: #fff;
+            transition: 0.4s;
+            position: absolute;
+            top: 358%;
+            left: 50%;
+        }
+        .fa-telegram-plane:hover{
+            color: #6cb9e0;
+            margin-top: -6px;
+        }
+        .fa-youtube{
+            color: #fff;
+            transition: 0.4s;
+            position: absolute;
+            top: 358%;
+            left: 55%;
+        }
+        .fa-youtube:hover{
+            color: #f33029;
+            margin-top: -6px;
+        }
+        .fa-github{
+            color: #fff;
+            transition: 0.4s;
+            position: absolute;
+            top: 358%;
+            left: 60%;
+        }
+        .fa-github:hover{
+            margin-top: -6px;
+        }
+        .tit-log{
+            border-radius: 180px;
+        }
+        body{
+            background-color: #111;
+            margin: 0;
+            padding: 0;
+        }
+        .start{
+            position: absolute;
+            left: 12%;
+            border-left: 1px solid #828282;
+        }
+        span{
+            color: #e67e22;
+        }
+        p{
+            margin-top: 30%;
+            font-size: 32px;
+            font-weight: 600;
+            font-family: monospace;
+            color: white;
+            padding-bottom: 2000px;
+        }
+        .im{
+            border-radius: 180px;
+            position: absolute;
+            left: 70%;
+            top: 15%;
+            transition: 1s;
+        }
+        .im:hover{
+            transform: scale(1.2);
+        }
+        .me{
+            color: #828282;
+            position: absolute;
+            top: 16%;
+            font-family: monospace;
+            font-size: 1.14vw;
+            transition: 0.5s;
+        }
+        .me:hover{
+            color: #e67e22;
+        }
+        .logo{
+            position: fixed;
+            left: 0.5%;
+        }
+        .by{
+            position: fixed;
+            top: 60%;
+            color: #3b5875;
+            font-size: 18px;
+            font-family: monospace;
+            transform: rotate(-90deg);
+            transform-origin: top left;
+            margin-left: 4rem;
+        }
+          html{
+          scroll-behavior: smooth;
+          }
+         
+         .akeconsa-udaneles{
+           position: fixed;
+           bottom: 28px;
+           left: 80px;
+           z-index: 9;
+           }
+          .akeconsa-udaneles a {
+            text-align: center;
+            display: block;
+}
+          .akeconsa-udaneles a span {
+            color: #f7f0f0;
+            font-size: 30px;
+            line-height: 42px;
+            cursor: pointer;
+            transition: 0.5s;
+          }
+        .akeconsa-udaneles a span:hover{
+            color: #e67e22;
+            transition: 0.5s ease;
+        }
+        .about-me{
+            color: #fff;
+            font-size: 45px;
+            line-height: 65px;
+            font-weight: 800;
+            position: absolute;
+            top: 100%;
+            left: 45%;
+            font-family: FuturaPT,sans-serif;
+        }
+        strong{
+          color: #fff;
+          font-size: 28px;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+          font-weight: 200;
+          position: absolute;
+          top: 120%;
+          left: 15%;
+        }
+        .skill{
+            font-family: monospace;
+            font-weight: bold;
+        }
+        .skills{
+            font-size: 19px;
+            position: absolute;
+            top: 155%;
+            left: 12%;
+        }
+        li{
+            color: #e67e22;;
+        }
+        li h4{
+            color: #fff;
+            font-family: monospace;
+            font-size: 19.5px;
+            font-weight: 600;
+            line-height: 30px;
+            margin-bottom: -1%;
+        }
+        .add{
+            font-family: monospace;
+            font-weight: bold;
+        }
+        .additonal{
+            font-size: 19px;
+            position: absolute;
+            top: 210%;
+            left: 12%;
+        }
+        .with{
+            font-family: monospace;
+            font-weight: bold;
+        }
+        .withme{
+            font-size: 19px;
+            position: absolute;
+            top: 250%;
+            left: 12%;
+        }
+        .contacts{
+            color: #fff;
+            font-size: 45px;
+            line-height: 65px;
+            font-weight: 800;
+            position: absolute;
+            top: 320%;
+            left: 45%;
+            font-family: FuturaPT,sans-serif;
+            padding-bottom: 20px;
+        }
+        .find{
+            color: #e67e22;
+            font-size: 19px;
+            font-weight: bold;
+            font-family: monospace;
+            position: absolute;
+            top: 350%;
+            left: 49%;
+        }
+       </style>
+</html>
