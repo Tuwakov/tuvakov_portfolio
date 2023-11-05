@@ -13,6 +13,7 @@
     </head>
     <body>
         <div class="start">
+            <div class="border"></div>
             <p>Hi,<br>
             my name is <span class="or-text">Pirnazar Tuvakov</span>,<br>
             I'm <span class="or-text">frontend</span> developer<br>
@@ -235,7 +236,6 @@
         .start{
             position: absolute;
             left: 12%;
-            border-left: 1px solid #828282;
         }
         span{
             color: #e67e22;
@@ -246,7 +246,13 @@
             font-weight: 600;
             font-family: monospace;
             color: white;
-            padding-bottom: 2000px;
+            padding-bottom: 300px;
+        }
+        .border{
+            position: fixed;
+            height: 100%;
+            width: 1px;
+            background-color: #828282;
         }
         .im{
             border-radius: 180px;
